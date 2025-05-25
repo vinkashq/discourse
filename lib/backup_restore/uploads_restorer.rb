@@ -46,7 +46,7 @@ module BackupRestore
       backup_contains_optimized_images = File.exist?(File.join(@tmp_uploads_path, "optimized"))
 
       remap_uploads
-      restore_uploads
+      # restore_uploads
 
       generate_optimized_images unless backup_contains_optimized_images
       rebake_posts_with_uploads
